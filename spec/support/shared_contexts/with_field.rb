@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.shared_context 'with custom text field params', with_custom_text_field_params: true do
+RSpec.shared_context 'with text field params', with_text_field_params: true do
   let(:field_title)             { 'Custom text' }
   let(:field_type)              { 'text' }
   let(:field_description)       { 'A custom text field' }
@@ -27,8 +27,8 @@ RSpec.shared_context 'with custom text field params', with_custom_text_field_par
   end
 end
 
-RSpec.shared_context 'with existing custom text field', with_existing_custom_text_field: true do
-  include_context 'with custom text field params'
+RSpec.shared_context 'with existing text field', with_existing_text_field: true do
+  include_context 'with text field params'
 
   let!(:field) do
     response = client.create_field(field_params)
@@ -41,7 +41,7 @@ RSpec.shared_context 'with existing custom text field', with_existing_custom_tex
   end
 end
 
-RSpec.shared_context 'with custom field option params', with_custom_field_option_params: true do
+RSpec.shared_context 'with field option params', with_field_option_params: true do
   let(:option_1_title)  { 'Option 1' }
   let(:option_1_value)  { 'Option 1' }
   let(:option_2_title)  { 'Option 2' }
@@ -66,7 +66,7 @@ RSpec.shared_context 'with custom field option params', with_custom_field_option
   end
 end
 
-RSpec.shared_context 'with custom radio field params', with_custom_radio_field_params: true do
+RSpec.shared_context 'with radio field params', with_radio_field_params: true do
   let(:field_title)             { 'Custom radio' }
   let(:field_type)              { 'radio' }
   let(:field_description)       { 'A custom radio field' }
@@ -92,9 +92,9 @@ RSpec.shared_context 'with custom radio field params', with_custom_radio_field_p
   end
 end
 
-RSpec.shared_context 'with existing custom radio field', with_existing_custom_radio_field: true do
-  include_context 'with custom radio field params'
-  include_context 'with custom field option params'
+RSpec.shared_context 'with existing radio field', with_existing_radio_field: true do
+  include_context 'with radio field params'
+  include_context 'with field option params'
 
   let!(:field) do
     response = client.create_field(field_params)
@@ -113,6 +113,6 @@ RSpec.shared_context 'with existing custom radio field', with_existing_custom_ra
 
   after do
     client.delete_field(field_id) if field_id
-    # note that custom field options are deleted with their parent custom fields
+    # Note that custom field options are deleted when their parent custom fields are deleted.
   end
 end

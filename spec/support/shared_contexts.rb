@@ -4,7 +4,7 @@ require_relative 'shared_contexts/with_address'
 require_relative 'shared_contexts/with_group'
 require_relative 'shared_contexts/with_list'
 require_relative 'shared_contexts/with_user'
-require_relative 'shared_contexts/with_custom_field'
+require_relative 'shared_contexts/with_field'
 
 RSpec.shared_context 'with existing account' do
   let!(:account) do
