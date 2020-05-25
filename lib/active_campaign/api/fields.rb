@@ -93,8 +93,30 @@ module ActiveCampaign
       # @param params [Integer] :relid the id of the list to create the relationship (0 makes the field available on all lists)
       #
       # @return [Hash]
-      def create_field_relation
+      def create_field_rel(params)
         post("fieldRels", fieldRel: params)
+      end
+
+      # NOTE: Undocumented functionality
+      #
+      # Show a field rel
+      #
+      # @param [Integer] id the id of the field rel to show
+      #
+      # @return [Hash]
+      def show_field_rel(id)
+        get("fieldRels/#{id}")
+      end
+
+      # NOTE: Undocumented functionality
+      #
+      # Delete a custom field relationship
+      #
+      # @param [Integer] id the id of the field rel to delete
+      #
+      # @return [Hash]
+      def delete_field_rel(id)
+        delete("fieldRels/#{id}")
       end
 
       #
@@ -109,7 +131,7 @@ module ActiveCampaign
       # @option params [true, false] :isdefault whether or not this option is the default value
       #
       # @return [Hash] a hash containing information on the newly created field option
-      def create_field_options
+      def create_field_options(params)
         post("fieldOption/bulk", fieldOptions: params)
       end
 

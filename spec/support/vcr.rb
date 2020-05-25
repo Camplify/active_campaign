@@ -3,7 +3,6 @@
 require 'vcr'
 
 VCR.configure do |c|
-  c. allow_http_connections_when_no_cassette = true #TODO: delete this line
   c.configure_rspec_metadata!
   c.default_cassette_options = {
     allow_playback_repeats: true,
