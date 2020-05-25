@@ -10,12 +10,16 @@ module ActiveCampaign
     include API
     include TransformHash
 
-    endpoint :accounts
-    endpoint :contacts
     endpoint :account_contacts
+    endpoint :accounts
     endpoint :addresses
+    endpoint :contacts
+    endpoint :deals
+    endpoint :deal_custom_field_meta
+    endpoint :deal_stages
     endpoint :groups
     endpoint :lists
+    endpoint :pipelines
     endpoint :users
     endpoint :fields
 

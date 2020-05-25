@@ -1,8 +1,12 @@
 # frozen_string_literal: true
 
 require_relative 'shared_contexts/with_address'
+require_relative 'shared_contexts/with_deal'
+require_relative 'shared_contexts/with_deal_custom_field_meta'
+require_relative 'shared_contexts/with_deal_stage'
 require_relative 'shared_contexts/with_group'
 require_relative 'shared_contexts/with_list'
+require_relative 'shared_contexts/with_pipeline'
 require_relative 'shared_contexts/with_user'
 require_relative 'shared_contexts/with_field'
 
