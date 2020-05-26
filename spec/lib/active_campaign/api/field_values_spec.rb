@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe ActiveCampaign::API::FieldValues do #, :vcr do
+RSpec.describe ActiveCampaign::API::FieldValues do # , :vcr do
   let(:client) { ActiveCampaign.client }
 
   describe '#create_field_value', :with_field_value_params do
@@ -32,18 +32,18 @@ RSpec.describe ActiveCampaign::API::FieldValues do #, :vcr do
     end
 
     it 'filters by field id' do
-      response = client.show_field_values(filters: {fieldid: field_id})
+      response = client.show_field_values(filters: { fieldid: field_id })
       expect(response).to include_json(field_values: [expected_field_value_response])
 
-      response = client.show_field_values(filters: {fieldid: field_id.to_i + 1})
+      response = client.show_field_values(filters: { fieldid: field_id.to_i + 1 })
       expect(response).not_to include_json(field_values: [expected_field_value_response])
     end
 
     it 'filters by value' do
-      response = client.show_field_values(filters: {val: field_value[:value]})
+      response = client.show_field_values(filters: { val: field_value[:value] })
       expect(response).to include_json(field_values: [expected_field_value_response])
 
-      response = client.show_field_values(filters: {val: 'blueberries'})
+      response = client.show_field_values(filters: { val: 'blueberries' })
       expect(response).not_to include_json(field_values: [expected_field_value_response])
     end
   end
@@ -54,9 +54,9 @@ RSpec.describe ActiveCampaign::API::FieldValues do #, :vcr do
     let(:new_value) { 'blueberries' }
     let(:update_params) do
       {
-          contact: contact_id,
-          field: field_id,
-          value: new_value
+        contact: contact_id,
+        field: field_id,
+        value: new_value
       }
     end
 

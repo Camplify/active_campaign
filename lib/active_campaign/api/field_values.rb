@@ -68,7 +68,7 @@ module ActiveCampaign
       #
       def show_field_values(filters: {}, **params)
         params[:filters] = filters if filters.any?
-        get("fieldValues", params)
+        get('fieldValues', params)
       end
     end
   end
