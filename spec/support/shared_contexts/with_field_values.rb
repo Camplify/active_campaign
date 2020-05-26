@@ -4,8 +4,8 @@ RSpec.shared_context 'with field value params', with_field_value_params: true do
   include_context 'with existing contact'
   include_context 'with existing text field'
 
-  let!(:contact_id)   { contact[:id] }
-  let!(:value)        { 'Text field value' }
+  let!(:contact_id) { contact[:id] }
+  let!(:value)      { 'Text field value' }
   let(:field_value_params) do
     {
       contact: contact_id,
