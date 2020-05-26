@@ -7,7 +7,7 @@ module ActiveCampaign
     #
     # @author Tim Chaston <timchaston@gmail.com>
     #
-    module CustomFieldValues
+    module FieldValues
       #
       # Create a custom field value
       #
@@ -45,7 +45,7 @@ module ActiveCampaign
       # @return [Hash] a hash with the information of the contact and the custom field value
       #
       def update_field_value(id, params)
-        put("fieldValues/#{id}")
+        put("fieldValues/#{id}", field_value: params)
       end
 
       #
@@ -62,17 +62,13 @@ module ActiveCampaign
       #
       # List all custom field values
       #
-      # @option [String] filters_field_id the id of the field the value belongs to
-      # @option [String] filters_val the value of the custom field for a specify contact
+      # @option [Hash] filters a list
+      # @option filter [String] :fieldid the id of the field the value belongs to
+      # @option filter [String] :val the value of the custom field for a specify contact
       #
-      def show_field_values(filters_field_id = nil, filters_val = nil)
-        # TODO: check that all of this is legit
-        query_string = "?"
-        query_string += "filters[fieldId]=#{filters_field_id}" if filters_field_id
-        query_string += "filters[val]=#{filters_val}" if filters_val
-        query_string = "" if query_string == "?"
-
-        get('fieldValues#{query_string}')
+      def show_field_values(filters: {}, **params)
+        params[:filters] = filters if filters.any?
+        get("fieldValues", params)
       end
     end
   end

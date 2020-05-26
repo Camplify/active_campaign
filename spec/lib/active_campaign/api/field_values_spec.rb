@@ -2,95 +2,78 @@
 
 require 'spec_helper'
 
-RSpec.describe ActiveCampaign::API::Users, :vcr do
+RSpec.describe ActiveCampaign::API::FieldValues do #, :vcr do
   let(:client) { ActiveCampaign.client }
 
-  describe '#create_user', :with_user_params do
-    subject(:response) { client.create_user(user_params) }
+  describe '#create_field_value', :with_field_value_params do
+    subject(:response) { client.create_field_value(field_value_params) }
 
     after do
-      client.delete_user(response.dig(:user, :id))
+      client.delete_field_value(response.dig(:field_value, :id))
     end
 
-    it 'returns a user hash' do
-      expect(response).to include_json(user: expected_user_response)
-    end
-  end
-
-  describe '#show_user', :with_existing_user do
-    subject(:response) { client.show_user(user_id) }
-
-    it 'returns a user hash' do
-      expect(response).to include_json(user: expected_user_response)
+    it 'returns a field_value hash' do
+      expect(response).to include_json(field_value: expected_field_value_response)
     end
   end
 
-  describe '#show_user_by_email', :with_existing_user do
-    subject(:response) { client.show_user_by_email(user_email) }
+  describe '#show_field_value', :with_existing_field_value do
+    subject(:response) { client.show_field_value(field_value_id) }
 
-    it 'returns a user hash' do
-      expect(response).to include_json(user: expected_user_response)
+    it 'returns a field_value hash' do
+      expect(response).to include_json(field_value: expected_field_value_response)
     end
   end
 
-  describe '#show_user_by_username', :with_existing_user do
-    subject(:response) { client.show_user_by_username(user_username) }
+  describe '#show_field_values', :with_existing_field_value do
+    it 'returns a field_value hash' do
+      response = client.show_field_values
+      expect(response).to include_json(field_values: [expected_field_value_response])
+    end
 
-    it 'returns a user hash' do
-      expect(response).to include_json(user: expected_user_response)
+    it 'filters by field id' do
+      response = client.show_field_values(filters: {fieldid: field_id})
+      expect(response).to include_json(field_values: [expected_field_value_response])
+
+      response = client.show_field_values(filters: {fieldid: field_id.to_i + 1})
+      expect(response).not_to include_json(field_values: [expected_field_value_response])
+    end
+
+    it 'filters by value' do
+      response = client.show_field_values(filters: {val: field_value[:value]})
+      expect(response).to include_json(field_values: [expected_field_value_response])
+
+      response = client.show_field_values(filters: {val: 'blueberries'})
+      expect(response).not_to include_json(field_values: [expected_field_value_response])
     end
   end
 
-  describe '#show_user_logged_in', :with_existing_user do
-    subject(:response) { client.show_user_logged_in }
+  describe '#update_field_value', :with_existing_field_value do
+    subject(:response) { client.update_field_value(field_value_id, update_params) }
 
-    let(:expected_user_response) do
-      {
-        username: 'admin',
-        first_name: 'Mikael',
-        last_name: 'Henriksson',
-        email: 'mikael@mhenrixon.com',
-        local_zoneid: 'Europe/Berlin'
-      }
-    end
-
-    it 'returns a user hash' do
-      expect(response).to include_json(user: expected_user_response)
-    end
-  end
-
-  describe '#show_users', :with_existing_user do
-    subject(:response) { client.show_users }
-
-    it 'returns a user hash' do
-      expect(response).to include_json(users: [{}, expected_user_response])
-    end
-  end
-
-  describe '#update_user', :with_existing_user do
-    subject(:response) { client.update_user(user_id, update_params) }
-
-    let(:new_first_name) { 'Mika' }
-    let(:new_last_name)  { 'Hel' }
-    let(:new_email)      { 'mika@hel.de' }
-    let(:new_username)   { 'mikahel' }
-    let(:new_password)   { 'hokuspokus' }
+    let(:new_value) { 'blueberries' }
     let(:update_params) do
       {
-        first_name: new_first_name,
-        last_name: new_last_name,
-        email: new_email,
-        group: group_id,
-        username: new_username,
-        password: new_password
+          contact: contact_id,
+          field: field_id,
+          value: new_value
       }
     end
-    let(:expected_user_response) do
-      update_params.except(:password, :group)
+
+    let(:expected_field_value_response) do
+      update_params
     end
 
-    it 'returns a user hash' do
-      expect(response).to include_json(user: expected_user_response)
+    it 'returns a field_value hash' do
+      expect(response).to include_json(field_value: expected_field_value_response)
+    end
+  end
+
+  describe '#delete_field_value', :with_existing_field_value do
+    subject(:response) { client.delete_field_value(field_value_id) }
+
+    it 'returns a field_value hash' do
+      expect(response).to eq({})
     end
   end
 end

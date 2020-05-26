@@ -1,28 +1,26 @@
 # frozen_string_literal: true
 
-RSpec.shared_context 'with custom field value params', with_field_value_params: true do
+RSpec.shared_context 'with field value params', with_field_value_params: true do
   include_context 'with existing contact'
-  # TODO: write 'with existing custom field' context, probably should do that as the first branch...
-  # include_context 'with existing custom field'
+  include_context 'with existing text field'
 
-  let(:field_value_contact_id)   { contact.id }
-  let(:field_value_field_id)   { '2' } # TODO: use existing field context when it actually is written
-  let(:field_value_value)   { 'Yes' }
+  let!(:contact_id)   { contact[:id] }
+  let!(:value)        { 'Text field value' }
   let(:field_value_params) do
     {
-        contact: field_value_contact_id,
-        field: field_value_field_id,
-        value: field_value_value
+        contact: contact_id,
+        field: field_id,
+        value: value
     }
   end
 
   let(:expected_field_value_response) do
-    user_params.except(:group, :password)
+    field_value_params
   end
 end
 
-RSpec.shared_context 'with existing custom field value', with_existing_custom_field_value: true do
-  include_context 'with custom field value params'
+RSpec.shared_context 'with existing field value', with_existing_field_value: true do
+  include_context 'with field value params'
 
   let!(:field_value) do
     response = client.create_field_value(field_value_params)
