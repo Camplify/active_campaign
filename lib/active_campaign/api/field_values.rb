@@ -14,7 +14,8 @@ module ActiveCampaign
       # @param [Hash] params create a new custom field value with this data
       # @param params [String] :contact ID of the contact whose field value you're updating
       # @param params [String] :field ID of the custom field whose value you're updating for the contact
-      # @param params [String] :value Value for the field that you're updating. For multi-select options this needs to be in the format of ||option1||option2||
+      # @param params [String] :value Value for the field that you're updating. For multi-select options this needs to be in
+      #   the format of ||option1||option2||
       #
       # @return [Hash] a hash with the information of the newly created field value and the contact it was created on
       #

@@ -31,18 +31,22 @@ RSpec.describe ActiveCampaign::API::FieldValues do # , :vcr do
       expect(response).to include_json(field_values: [expected_field_value_response])
     end
 
-    it 'filters by field id' do
+    it 'includes field values when field id filter matches' do
       response = client.show_field_values(filters: { fieldid: field_id })
       expect(response).to include_json(field_values: [expected_field_value_response])
+    end
 
+    it 'excludes field values when field id filter does not match' do
       response = client.show_field_values(filters: { fieldid: field_id.to_i + 1 })
       expect(response).not_to include_json(field_values: [expected_field_value_response])
     end
 
-    it 'filters by value' do
+    it 'includes field values when value filter matches' do
       response = client.show_field_values(filters: { val: field_value[:value] })
       expect(response).to include_json(field_values: [expected_field_value_response])
+    end
 
+    it 'excludes field values when value filter does not match' do
       response = client.show_field_values(filters: { val: 'blueberries' })
       expect(response).not_to include_json(field_values: [expected_field_value_response])
     end
