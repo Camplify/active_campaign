@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
 RSpec.shared_context 'with text field params', with_text_field_params: true do
-  let(:field_title) { 'Custom text' }
-  let(:field_type) { 'text' }
-  let(:field_description) { 'A custom text field' }
-  let(:field_is_required) { '0' }
+  let(:field_title)            { 'Custom text' }
+  let(:field_type)             { 'text' }
+  let(:field_description)      { 'A custom text field' }
+  let(:field_is_required)      { '0' }
   let(:field_personalized_tag) { 'perstag' }
-  let(:field_default_value) { 'Default value' }
-  let(:field_visible) { '1' }
-  let(:field_ordering_number) { '2' }
+  let(:field_default_value)    { 'Default value' }
+  let(:field_visible)          { '1' }
+  let(:field_ordering_number)  { '2' }
   let(:field_params) do
     {
-        title: field_title,
-        type: field_type,
-        descript: field_description,
-        isrequired: field_is_required,
-        perstag: field_personalized_tag,
-        defval: field_default_value,
-        visible: field_visible,
-        ordernum: field_ordering_number
+      title: field_title,
+      type: field_type,
+      descript: field_description,
+      isrequired: field_is_required,
+      perstag: field_personalized_tag,
+      defval: field_default_value,
+      visible: field_visible,
+      ordernum: field_ordering_number
     }
   end
 
@@ -50,16 +50,16 @@ RSpec.shared_context 'with field option params without field ids', with_field_op
   let(:option_2_value) { 'Option 2' }
   let(:incomplete_field_option_params) do
     [
-        {
-            field: 0,
-            label: option_1_title,
-            value: option_1_value
-        },
-        {
-            field: 0,
-            label: option_2_title,
-            value: option_2_value
-        }
+      {
+        field: 0,
+        label: option_1_title,
+        value: option_1_value
+      },
+      {
+        field: 0,
+        label: option_2_title,
+        value: option_2_value
+      }
     ]
   end
 
@@ -70,22 +70,22 @@ end
 
 RSpec.shared_context 'with radio field params', with_radio_field_params: true do
   let(:field_title) { 'Custom radio' }
-  let(:field_type) { 'radio' }
-  let(:field_description) { 'A custom radio field' }
-  let(:field_is_required) { '0' }
+  let(:field_type)             { 'radio' }
+  let(:field_description)      { 'A custom radio field' }
+  let(:field_is_required)      { '0' }
   let(:field_personalized_tag) { 'Personalized Tag' }
-  let(:field_default_value) { 'Default value' }
-  let(:field_visible) { '1' }
-  let(:field_ordering_number) { '1' }
+  let(:field_default_value)    { 'Default value' }
+  let(:field_visible)          { '1' }
+  let(:field_ordering_number)  { '1' }
   let(:radio_field_params) do
     {
-        title: field_title,
-        type: field_type,
-        descript: field_description,
-        isrequired: field_is_required,
-        perstag: field_personalized_tag,
-        visible: field_visible,
-        ordernum: field_ordering_number,
+      title: field_title,
+      type: field_type,
+      descript: field_description,
+      isrequired: field_is_required,
+      perstag: field_personalized_tag,
+      visible: field_visible,
+      ordernum: field_ordering_number
     }
   end
 
@@ -109,12 +109,15 @@ RSpec.shared_context 'with existing radio field', with_existing_radio_field: tru
   end
 end
 
-RSpec.shared_context 'with existing radio field and field option params', with_existing_radio_field_and_field_option_params: true do
+RSpec.shared_context 'with existing radio field and field option params',
+                     with_existing_radio_field_and_field_option_params: true do
   include_context 'with existing radio field'
   include_context 'with field option params without field ids'
 
-  let(:field_option_params) { incomplete_field_option_params.each { |option| option[:field] = field[:id] } }
-  let(:expected_field_option_response) { incomplete_expected_field_option_response.each { |option| option[:field] = field[:id] } }
+  let(:field_option_params)            { incomplete_field_option_params.each { |option| option[:field] = field[:id] } }
+  let(:expected_field_option_response) do
+    incomplete_expected_field_option_response.each { |option| option[:field] = field[:id] }
+  end
 
   # Note that custom field options are automatically deleted when their parent custom fields are deleted.
 end
@@ -140,12 +143,12 @@ RSpec.shared_context 'with field rel params', with_field_rel_params: true do
   include_context 'with existing text field'
 
   let(:field_id) { field[:id] }
-  let(:list_id) { "0" }
+  let(:list_id) { '0' }
 
   let(:field_rel_params) do
     {
-        field: field_id,
-        relid: list_id
+      field: field_id,
+      relid: list_id
     }
   end
 
@@ -168,4 +171,3 @@ RSpec.shared_context 'with existing field rel', with_existing_field_rel: true do
     client.delete_field_rel(rel_id) if rel_id
   end
 end
-

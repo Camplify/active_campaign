@@ -29,7 +29,7 @@ module ActiveCampaign
       #
       # @return [Hash] a hash with information about all custom fields, including the newly created custom field
       def create_field(params)
-        post("fields", field: params)
+        post('fields', field: params)
       end
 
       #
@@ -82,7 +82,7 @@ module ActiveCampaign
       #
       # @return [Hash] a hash with information on all custom fields
       def show_fields
-        get("fields")
+        get('fields')
       end
 
       #
@@ -90,11 +90,12 @@ module ActiveCampaign
       #
       # @param [Hash] params create a relationship with this data
       # @param params [Integer] :field the id of the field to create the relationship
-      # @param params [Integer] :relid the id of the list to create the relationship (0 makes the field available on all lists)
+      # @param params [Integer] :relid the id of the list to create the relationship (0 makes the field available
+      #   on all lists)
       #
       # @return [Hash]
       def create_field_rel(params)
-        post("fieldRels", fieldRel: params)
+        post('fieldRels', fieldRel: params)
       end
 
       # NOTE: Undocumented functionality
@@ -132,7 +133,7 @@ module ActiveCampaign
       #
       # @return [Hash] a hash containing information on the newly created field option
       def create_field_options(params)
-        post("fieldOption/bulk", fieldOptions: params)
+        post('fieldOption/bulk', fieldOptions: params)
       end
 
       # NOTE: Undocumented functionality.

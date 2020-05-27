@@ -37,23 +37,23 @@ RSpec.describe ActiveCampaign::API::Fields, :vcr do
     subject(:response) { client.update_field(field_id, update_params) }
 
     let(:field_title) { 'Custom text - updated' }
-    let(:field_type) { 'text' }
-    let(:field_description) { 'A custom text field - updated' }
-    let(:field_is_required) { '1' }
+    let(:field_type)             { 'text' }
+    let(:field_description)      { 'A custom text field - updated' }
+    let(:field_is_required)      { '1' }
     let(:field_personalized_tag) { 'perstag' }
-    let(:field_default_value) { 'Default value - updated' }
-    let(:field_visible) { '1' }
-    let(:field_ordering_number) { '3' }
+    let(:field_default_value)    { 'Default value - updated' }
+    let(:field_visible)          { '1' }
+    let(:field_ordering_number)  { '3' }
     let(:update_params) do
       {
-          title: field_title,
-          type: field_type,
-          descript: field_description,
-          isrequired: field_is_required,
-          #perstag: field_personalized_tag,
-          defval: field_default_value,
-          visible: field_visible,
-          ordernum: field_ordering_number
+        title: field_title,
+        type: field_type,
+        descript: field_description,
+        isrequired: field_is_required,
+        # perstag: field_personalized_tag,
+        defval: field_default_value,
+        visible: field_visible,
+        ordernum: field_ordering_number
       }
     end
 
@@ -75,7 +75,7 @@ RSpec.describe ActiveCampaign::API::Fields, :vcr do
 
     it 'makes the custom field irretrievable' do
       show_response = client.show_field(field_id)
-      expect(show_response).to_not include_json(field: expected_field_response)
+      expect(show_response).not_to include_json(field: expected_field_response)
     end
   end
 
