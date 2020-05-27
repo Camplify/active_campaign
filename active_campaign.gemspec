@@ -30,6 +30,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'activesupport',  '>= 4.0', '< 8.0'
-  spec.add_dependency 'faraday',        '>= 0.9', '< 3.0'
+  spec.add_dependency 'faraday',        '>= 1.0', '< 3.0'
   spec.add_dependency 'oj',             '>= 3.0', '< 4.0'
 end
