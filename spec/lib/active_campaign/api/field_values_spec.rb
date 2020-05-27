@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe ActiveCampaign::API::FieldValues do # , :vcr do
+RSpec.describe ActiveCampaign::API::FieldValues, :vcr do
   let(:client) { ActiveCampaign.client }
 
   describe '#create_field_value', :with_field_value_params do
