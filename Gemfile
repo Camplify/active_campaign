@@ -16,7 +16,6 @@ gem 'simplecov'
 gem 'simplecov-material'
 gem 'vcr'
 gem 'webmock'
-gem 'faraday', '>= 0.15.4', '< 1.0.0'
 
 platform :mri do
   gem 'simplecov-oj'
