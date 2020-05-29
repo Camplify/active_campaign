@@ -36,7 +36,7 @@ RSpec.describe ActiveCampaign::API::Fields, :vcr do
   describe '#update_field', :with_existing_text_field do
     subject(:response) { client.update_field(field_id, update_params) }
 
-    let(:field_title) { 'Custom text - updated' }
+    let(:field_title)            { 'Custom text - updated' }
     let(:field_type)             { 'text' }
     let(:field_description)      { 'A custom text field - updated' }
     let(:field_is_required)      { '1' }

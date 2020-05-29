@@ -69,7 +69,7 @@ RSpec.shared_context 'with field option params without field ids', with_field_op
 end
 
 RSpec.shared_context 'with radio field params', with_radio_field_params: true do
-  let(:field_title) { 'Custom radio' }
+  let(:field_title)            { 'Custom radio' }
   let(:field_type)             { 'radio' }
   let(:field_description)      { 'A custom radio field' }
   let(:field_is_required)      { '0' }
@@ -143,7 +143,7 @@ RSpec.shared_context 'with field rel params', with_field_rel_params: true do
   include_context 'with existing text field'
 
   let(:field_id) { field[:id] }
-  let(:list_id) { '0' }
+  let(:list_id)  { '0' }
 
   let(:field_rel_params) do
     {
