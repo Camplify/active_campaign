@@ -61,7 +61,7 @@ RSpec.describe ActiveCampaign::API::Fields, :vcr do
       update_params
     end
 
-    it 'returns a user hash' do
+    it 'returns a field hash' do
       expect(response).to include_json(field: expected_field_response)
     end
   end
@@ -82,7 +82,7 @@ RSpec.describe ActiveCampaign::API::Fields, :vcr do
   describe '#create_field_rel', :with_field_rel_params do
     subject(:response) { client.create_field_rel(field_rel_params) }
 
-    it 'returns a hash' do
+    it 'returns a field_rel hash' do
       expect(response).to include_json(field_rel: expected_field_rel_response)
     end
   end
@@ -90,7 +90,7 @@ RSpec.describe ActiveCampaign::API::Fields, :vcr do
   describe '#show_field_rel', :with_existing_field_rel do
     subject(:response) { client.show_field_rel(rel_id) }
 
-    it 'returns a hash' do
+    it 'returns a field_rel hash' do
       expect(response).to include_json(field_rel: expected_field_rel_response)
     end
   end
@@ -106,7 +106,7 @@ RSpec.describe ActiveCampaign::API::Fields, :vcr do
   describe '#create_field_options', :with_existing_radio_field_and_field_option_params do
     subject(:response) { client.create_field_options(field_option_params) }
 
-    it 'returns a hash' do
+    it 'returns a field_option hash' do
       expect(response).to include_json(field_options: expected_field_option_response)
     end
   end
@@ -114,7 +114,7 @@ RSpec.describe ActiveCampaign::API::Fields, :vcr do
   describe '#show_field_option', :with_existing_radio_field_with_options do
     subject(:response) { client.show_field_option(field_option_ids.first) }
 
-    it 'returns a hash' do
+    it 'returns a field_option hash' do
       expect(response).to include_json(field_option: expected_field_option_response.first)
     end
   end
