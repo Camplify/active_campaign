@@ -103,8 +103,10 @@ RSpec.describe ActiveCampaign::API::Fields, :vcr do
     end
   end
 
-  describe '#create_field_options', :with_existing_radio_field_and_field_option_params do
+  describe '#create_field_options', :with_existing_radio_field, :with_field_option_params do
     subject(:response) { client.create_field_options(field_option_params) }
+
+    let(:options_field_id) { field_id } # Override the default field id in 'with field option params' context
 
     it 'returns a field_option hash' do
       expect(response).to include_json(field_options: expected_field_option_response)

@@ -24,7 +24,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Thu, 28 May 2020 02:26:43 GMT
+      - Fri, 29 May 2020 01:51:43 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -32,10 +32,10 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=878f5ae5bc6afa17272409aa8e46bdc3; path=/; HttpOnly
-      - __cfduid=db9eb485776c7091fef28a581f505e7e11590632803; expires=Sat, 27-Jun-20
-        02:26:43 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=098747ea-67bc-4261-8fc0-7c83cda54120; path=/; domain=.camplify1589433994.api-us1.com;
+      - PHPSESSID=47598d6c4779d1cbceeaa5fa287960a7; path=/; HttpOnly
+      - __cfduid=daa87bc62b3d8486d6b8f2f6c4674a6a41590717102; expires=Sun, 28-Jun-20
+        01:51:42 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=101b4b5f-8d3f-476d-b8c1-1833cb91ee11; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
         path=/; domain=.camplify1589433994.api-us1.com
@@ -48,31 +48,31 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '264'
+      - '171'
       X-Request-Id:
-      - 34c7fda2-456b-4b4e-a650-df85dcfbe10a
+      - 29f24675-63af-4159-bf82-fae8c06d5e9d
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 02fab384020000d73265398200000001
+      - 02ffb9d29e0000fd32dcabb200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 59a4884cd909d732-SYD
+      - 59ac92643b67fd32-SYD
     body:
       encoding: UTF-8
       string: '{"field":{"type":"text","title":"Custom text","descript":"A custom
-        text field","isrequired":"0","perstag":"PERSTAG","defval":"Default value","visible":"1","ordernum":1,"cdate":"2020-05-27T21:26:43-05:00","udate":"2020-05-27T21:26:43-05:00","links":{"options":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/fields\/304\/options","relations":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/fields\/304\/relations"},"id":"304"}}'
+        text field","isrequired":"0","perstag":"PERSTAG","defval":"Default value","visible":"1","ordernum":1,"cdate":"2020-05-28T20:51:42-05:00","udate":"2020-05-28T20:51:42-05:00","links":{"options":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/fields\/415\/options","relations":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/fields\/415\/relations"},"id":"415"}}'
     http_version: null
-  recorded_at: Thu, 28 May 2020 02:26:43 GMT
+  recorded_at: Fri, 29 May 2020 01:51:43 GMT
 - request:
     method: post
     uri: "<API_ENDPOINT>/fieldRels"
     body:
       encoding: UTF-8
-      string: '{"fieldRel":{"field":"304","relid":"0"}}'
+      string: '{"fieldRel":{"field":"415","relid":"0"}}'
     headers:
       User-Agent:
       - ActiveCampaign Ruby Client (v3.0.0)
@@ -90,7 +90,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Thu, 28 May 2020 02:26:44 GMT
+      - Fri, 29 May 2020 01:51:43 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -98,15 +98,15 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=cca4ef3eae6fd4a4d8ca183c4bcd24f9; path=/; HttpOnly
-      - __cfduid=dcd6692d3b1bcce07c94e9d2551212a311590632803; expires=Sat, 27-Jun-20
-        02:26:43 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.camplify1589433994.api-us1.com
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.camplify1589433994.api-us1.com
-      - em_acp_globalauth_cookie=f08240c7-9de0-4090-971d-8884910cb640; path=/; domain=.camplify1589433994.api-us1.com;
+      - PHPSESSID=0bc9c833e5710a2a5b3fc657f33176ec; path=/; HttpOnly
+      - __cfduid=db4ba5c831ec9918b523c2163fe20ac491590717103; expires=Sun, 28-Jun-20
+        01:51:43 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=61e910e2-1853-4d83-8e0d-2dfde0ed29ad; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.camplify1589433994.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.camplify1589433994.api-us1.com
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Expires:
@@ -114,27 +114,27 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '99'
+      - '79'
       X-Request-Id:
-      - bbb4ec9d-ad52-4430-95b2-608e6ccc05c4
+      - 07e852dc-30a5-415c-be61-a32be6094f37
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 02fab386140000da56a685e200000001
+      - 02ffb9d45a0000fd3e74bf0200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 59a488502b25da56-SYD
+      - 59ac9266fd10fd3e-SYD
     body:
       encoding: UTF-8
-      string: '{"fieldRel":{"relid":"0","field":"304","cdate":"2020-05-27T21:26:44-05:00","links":[],"id":"40"}}'
+      string: '{"fieldRel":{"relid":"0","field":"415","cdate":"2020-05-28T20:51:43-05:00","links":[],"id":"71"}}'
     http_version: null
-  recorded_at: Thu, 28 May 2020 02:26:44 GMT
+  recorded_at: Fri, 29 May 2020 01:51:43 GMT
 - request:
     method: delete
-    uri: "<API_ENDPOINT>/fields/304"
+    uri: "<API_ENDPOINT>/fields/415"
     body:
       encoding: US-ASCII
       string: ''
@@ -155,7 +155,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 28 May 2020 02:26:44 GMT
+      - Fri, 29 May 2020 01:51:43 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -163,10 +163,10 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=4408e4ef0acfe30956660039940a76d8; path=/; HttpOnly
-      - __cfduid=dc34c6dfc744cea05dcf5f45a36af45231590632804; expires=Sat, 27-Jun-20
-        02:26:44 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=1316fc7f-f0fb-47e7-99c9-53dc983d87e6; path=/; domain=.camplify1589433994.api-us1.com;
+      - PHPSESSID=f0da82b8a218b0caef39a415f4840a2a; path=/; HttpOnly
+      - __cfduid=db4b9eea0f5678a1f2148fe477ce2f42c1590717103; expires=Sun, 28-Jun-20
+        01:51:43 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=41e95968-53be-4206-880b-ef359422922a; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
         path=/; domain=.camplify1589433994.api-us1.com
@@ -179,24 +179,24 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '239'
+      - '237'
       X-Request-Id:
-      - 847abf93-e678-42fc-bfe0-2ad3e96289cf
+      - 99780913-ccf3-4129-a27e-e5452506c394
       Accept-Ranges:
       - bytes
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 02fab3877f0000fe84f93da200000001
+      - 02ffb9d5aa0000fd2ae902f200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 59a488526f4bfe84-SYD
+      - 59ac92691d30fd2a-SYD
     body:
       encoding: UTF-8
       string: "{}"
     http_version: null
-  recorded_at: Thu, 28 May 2020 02:26:44 GMT
+  recorded_at: Fri, 29 May 2020 01:51:43 GMT
 recorded_with: VCR 5.1.0

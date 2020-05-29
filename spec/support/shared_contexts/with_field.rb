@@ -43,28 +43,31 @@ RSpec.shared_context 'with existing text field', with_existing_text_field: true 
   end
 end
 
-RSpec.shared_context 'with field option params without field ids', with_field_option_params_without_field_ids: true do
-  let(:option_1_title) { 'Option 1' }
-  let(:option_1_value) { 'Option 1' }
-  let(:option_2_title) { 'Option 2' }
-  let(:option_2_value) { 'Option 2' }
-  let(:incomplete_field_option_params) do
+RSpec.shared_context 'with field option params', with_field_option_params: true do
+  let(:option_1_title)   { 'Option 1' }
+  let(:option_1_value)   { 'Option 1' }
+  let(:option_2_title)   { 'Option 2' }
+  let(:option_2_value)   { 'Option 2' }
+  # Note that a field id of '0' is invalid, and either the hash must be overwritten, or let(:field_id) overwritten, further
+  #   down the chain, before a call is made using this parameter hash
+  let(:options_field_id) { '0' }
+  let(:field_option_params) do
     [
       {
-        field: 0,
+        field: options_field_id,
         label: option_1_title,
         value: option_1_value
       },
       {
-        field: 0,
+        field: options_field_id,
         label: option_2_title,
         value: option_2_value
       }
     ]
   end
 
-  let(:incomplete_expected_field_option_response) do
-    incomplete_field_option_params
+  let(:expected_field_option_response) do
+    field_option_params
   end
 end
 
@@ -101,6 +104,7 @@ RSpec.shared_context 'with existing radio field', with_existing_radio_field: tru
     response = client.create_field(radio_field_params)
     response.fetch(:field) { raise "HELL (custom radio field creation failed) #{response}" }
   end
+
   let(:field_id) { field[:id] }
 
   after do
@@ -109,21 +113,11 @@ RSpec.shared_context 'with existing radio field', with_existing_radio_field: tru
   end
 end
 
-RSpec.shared_context 'with existing radio field and field option params',
-                     with_existing_radio_field_and_field_option_params: true do
-  include_context 'with existing radio field'
-  include_context 'with field option params without field ids'
-
-  let(:field_option_params)            { incomplete_field_option_params.each { |option| option[:field] = field[:id] } }
-  let(:expected_field_option_response) do
-    incomplete_expected_field_option_response.each { |option| option[:field] = field[:id] }
-  end
-
-  # Note that custom field options are automatically deleted when their parent custom fields are deleted.
-end
-
 RSpec.shared_context 'with existing radio field with options', with_existing_radio_field_with_options: true do
-  include_context 'with existing radio field and field option params'
+  include_context 'with existing radio field'
+  include_context 'with field option params'
+
+  let(:options_field_id) { field_id } # This overrides the options field id in 'with field option params'
 
   let!(:field_options) do
     response = client.create_field_options(field_option_params)
