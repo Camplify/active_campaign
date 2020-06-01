@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.shared_context 'with field value params', with_field_value_params: true do
+RSpec.shared_context 'with text field value params', with_text_field_value_params: true do
   include_context 'with existing contact'
   include_context 'with existing text field'
 
@@ -19,8 +19,8 @@ RSpec.shared_context 'with field value params', with_field_value_params: true do
   end
 end
 
-RSpec.shared_context 'with existing field value', with_existing_field_value: true do
-  include_context 'with field value params'
+RSpec.shared_context 'with existing text field value', with_existing_text_field_value: true do
+  include_context 'with text field value params'
 
   let!(:field_value) do
     response = client.create_field_value(field_value_params)
