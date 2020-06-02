@@ -54,7 +54,7 @@ module ActiveCampaign
       #
       # @param [Integer] id the id of the custom field value to delete
       #
-      # @return [Hash]
+      # @return [Hash] an empty hash
       #
       def delete_field_value(id)
         delete("fieldValues/#{id}")
@@ -63,10 +63,11 @@ module ActiveCampaign
       #
       # List all custom field values
       #
-      # @option [Hash] filters a list
+      # @option [Hash] filters filter the list of custom field values with this data
       # @option filter [String] :fieldid the id of the field the value belongs to
       # @option filter [String] :val the value of the custom field for a specify contact
       #
+      # @return [Hash] a hash with the information of field values that match the filters
       def show_field_values(filters: {}, **params)
         params[:filters] = filters if filters.any?
         get('fieldValues', params)

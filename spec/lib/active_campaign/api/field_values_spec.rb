@@ -64,19 +64,19 @@ RSpec.describe ActiveCampaign::API::FieldValues, :vcr do
       }
     end
 
-    let(:expected_field_value_response) do
+    let(:expected_update_response) do
       update_params
     end
 
     it 'returns a field_value hash' do
-      expect(response).to include_json(field_value: expected_field_value_response)
+      expect(response).to include_json(field_value: expected_update_response)
     end
   end
 
   describe '#delete_field_value', :with_existing_text_field_value do
     subject(:response) { client.delete_field_value(field_value_id) }
 
-    it 'returns a field_value hash' do
+    it 'returns an empty hash' do
       expect(response).to eq({})
     end
   end
