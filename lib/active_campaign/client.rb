@@ -14,16 +14,17 @@ module ActiveCampaign
     endpoint :accounts
     endpoint :addresses
     endpoint :contacts
+    endpoint :contact_tags
     endpoint :deals
     endpoint :deal_custom_field_meta
     endpoint :deal_custom_field_data
     endpoint :deal_stages
+    endpoint :fields
+    endpoint :field_values
     endpoint :groups
     endpoint :lists
     endpoint :pipelines
     endpoint :users
-    endpoint :fields
-    endpoint :field_values
 
     attr_reader :config
 
