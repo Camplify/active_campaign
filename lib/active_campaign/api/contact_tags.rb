@@ -13,8 +13,7 @@ module ActiveCampaign
       #
       # @param [Hash] params add a tag to a contact with this data
       # @param params [String] :contact ID of the contact you're adding the tag to
-      # @param params [String] :tag ID of the tag to be added contact
-      #   the format of ||option1||option2||
+      # @param params [String] :tag ID of the tag to be added for the contact
       #
       # @return [Hash] a hash with the information of the newly created contact tag
       #
