@@ -18,7 +18,7 @@ RSpec.describe ActiveCampaign::API::ContactTags, :vcr do
   end
 
   describe '#delete_contact_tag', :with_existing_contact_tag do
-    subject(:response) { client.delete_field_value(contact_tag_id) }
+    subject(:response) { client.delete_contact_tag(contact_tag_id) }
 
     it 'returns an empty hash' do
       expect(response).to eq({})

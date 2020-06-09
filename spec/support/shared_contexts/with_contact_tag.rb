@@ -18,7 +18,7 @@ RSpec.shared_context 'with contact tag params', with_contact_tag_params: true do
   end
 end
 
-RSpec.shared_context 'with existing contact tag', with_contact_tag: true do
+RSpec.shared_context 'with existing contact tag', with_existing_contact_tag: true do
   include_context 'with contact tag params'
 
   let!(:contact_tag) do
