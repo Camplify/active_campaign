@@ -61,7 +61,7 @@ module ActiveCampaign
       # @return [Hash] a hash with the information of all contact tags
       #
       def show_contact_tags
-        get("contactTags")
+        get('contactTags')
       end
     end
   end
