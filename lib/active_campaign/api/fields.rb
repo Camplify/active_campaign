@@ -81,8 +81,8 @@ module ActiveCampaign
       # List all custom fields
       #
       # @return [Hash] a hash with information on all custom fields
-      def show_fields
-        get('fields')
+      def show_fields(**params)
+        get('fields', params)
       end
 
       #

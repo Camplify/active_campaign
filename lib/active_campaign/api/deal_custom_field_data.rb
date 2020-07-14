@@ -83,8 +83,10 @@ module ActiveCampaign
       #
       # @return [Array<Hash>]
       #
-      def show_deal_custom_field_datas(search = nil)
-        get('dealCustomFieldData', search: search)
+      def show_deal_custom_field_datas(search = nil, **params)
+        params[:search] = search if search
+
+        get('dealCustomFieldData', params)
       end
 
       # rubocop:disable Layout/LineLength

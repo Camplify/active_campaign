@@ -24,23 +24,23 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sun, 24 May 2020 10:15:18 GMT
+      - Tue, 14 Jul 2020 03:10:31 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '473'
+      - '440'
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=6261b040dcb0e54d53237506c688a8bf; path=/; HttpOnly
-      - __cfduid=d5b0d995620944132e12e8c9c3747f35a1590315318; expires=Tue, 23-Jun-20
-        10:15:18 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=a4503e4b-57c1-45e4-9467-8feeef3ed6d3; path=/; domain=.mhenrixonconsulting1570091019.api-us1.com;
+      - PHPSESSID=623f83d742646c6bf5070fb5ffe05ccb; path=/; HttpOnly
+      - __cfduid=d3203bd9daf48232b155b64baea47d87a1594696231; expires=Thu, 13-Aug-20
+        03:10:31 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=bdb6e982-78cd-4872-85c1-a633a1ab0ed8; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
+        path=/; domain=.camplify1589433994.api-us1.com
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
+        path=/; domain=.camplify1589433994.api-us1.com
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Expires:
@@ -48,28 +48,28 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '81'
+      - '85'
       X-Request-Id:
-      - 27a7214d-1445-4792-8c3a-a73839a40160
+      - cc0489e2-1dfd-43c2-9d1f-6a4ff94c86c8
       Cf-Cache-Status:
       - DYNAMIC
+      Cf-Request-Id:
+      - 03ece682230000fe6826238200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 598641327c18d11d-TXL
-      Cf-Request-Id:
-      - 02e7c7138b0000d11da39b7200000001
+      - 5b280d169f95fe68-SYD
     body:
       encoding: UTF-8
       string: '{"address":{"city":"Zeuthen","state":"Brandenburg","zip":"15738","country":"DE","companyName":"mhenrixon
-        Consulting","address1":"Seestr. 5","isDefault":1,"links":{"addressGroup":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/addresses\/3\/addressGroup","addressList":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/addresses\/3\/addressList","forms":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/addresses\/3\/forms"},"id":"3"}}'
+        Consulting","address1":"Seestr. 5","isDefault":1,"links":{"addressGroup":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/addresses\/2\/addressGroup","addressList":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/addresses\/2\/addressList","forms":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/addresses\/2\/forms"},"id":"2"}}'
     http_version: null
-  recorded_at: Sun, 24 May 2020 10:15:18 GMT
+  recorded_at: Tue, 14 Jul 2020 03:10:31 GMT
 - request:
     method: get
-    uri: "<API_ENDPOINT>/addresses/3"
+    uri: "<API_ENDPOINT>/addresses/2"
     body:
       encoding: US-ASCII
       string: ''
@@ -90,7 +90,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 24 May 2020 10:15:18 GMT
+      - Tue, 14 Jul 2020 03:10:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -98,15 +98,15 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=8dd6e65551ce65436ce1666b214719e9; path=/; HttpOnly
-      - __cfduid=dd7fc2d687a4a3f2e0ceec58d95c06c511590315318; expires=Tue, 23-Jun-20
-        10:15:18 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=d1bf5ea7-ab92-4de2-bde9-846997e6d0ca; path=/; domain=.mhenrixonconsulting1570091019.api-us1.com;
+      - PHPSESSID=9057a02297083b4cb01bfb79f3aed999; path=/; HttpOnly
+      - __cfduid=d7c73ce4607b1067cea10f88878dd95171594696231; expires=Thu, 13-Aug-20
+        03:10:31 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.camplify1589433994.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.camplify1589433994.api-us1.com
+      - em_acp_globalauth_cookie=e38f5257-2c5f-4621-8376-85eb30f62067; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Expires:
@@ -114,29 +114,29 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '89'
+      - '105'
       X-Request-Id:
-      - 848f6973-c446-4a8e-8bf2-64a8ee379205
+      - 890469b4-3028-4efd-8450-05e5a444bb10
       Cf-Cache-Status:
       - DYNAMIC
+      Cf-Request-Id:
+      - 03ece683830000fd3ac8ae8200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 598641346af1d10d-TXL
-      Cf-Request-Id:
-      - 02e7c714bc0000d10d408b4200000001
+      - 5b280d18d9c8fd3a-SYD
     body:
       encoding: ASCII-8BIT
       string: '{"address":{"companyName":"mhenrixon Consulting","address1":"Seestr.
-        5","address2":"","city":"Zeuthen","state":"Brandenburg","district":"","zip":"15738","country":"DE","allgroup":"0","isDefault":"1","created_timestamp":"2020-05-24
-        05:15:18","updated_timestamp":"2020-05-24 05:15:18","created_by":null,"updated_by":null,"links":{"addressGroup":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/addresses\/3\/addressGroup","addressList":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/addresses\/3\/addressList","forms":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/addresses\/3\/forms"},"id":"3"}}'
+        5","address2":"","city":"Zeuthen","state":"Brandenburg","district":"","zip":"15738","country":"DE","allgroup":"0","isDefault":"1","created_timestamp":"2020-07-13
+        22:10:31","updated_timestamp":"2020-07-13 22:10:31","created_by":null,"updated_by":null,"links":{"addressGroup":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/addresses\/2\/addressGroup","addressList":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/addresses\/2\/addressList","forms":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/addresses\/2\/forms"},"id":"2"}}'
     http_version: null
-  recorded_at: Sun, 24 May 2020 10:15:18 GMT
+  recorded_at: Tue, 14 Jul 2020 03:10:32 GMT
 - request:
     method: put
-    uri: "<API_ENDPOINT>/addresses/3"
+    uri: "<API_ENDPOINT>/addresses/2"
     body:
       encoding: UTF-8
       string: '{"address":{"isDefault":false},"changeCase":false}'
@@ -157,7 +157,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 24 May 2020 10:15:19 GMT
+      - Tue, 14 Jul 2020 03:10:33 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -165,15 +165,15 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=9311fe2136ec5faec308d56fa230e77a; path=/; HttpOnly
-      - __cfduid=d43fcd520aa05bb363d64a1661e9ed91f1590315318; expires=Tue, 23-Jun-20
-        10:15:18 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=099dbdbd-b4c1-4611-898b-cdb22f5cd6c6; path=/; domain=.mhenrixonconsulting1570091019.api-us1.com;
+      - PHPSESSID=e8723edd3c390c274e9b701985635045; path=/; HttpOnly
+      - __cfduid=d156a26cf3144347fef96a6010d71cff91594696232; expires=Thu, 13-Aug-20
+        03:10:32 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=6e25a285-b2fa-4b6c-873d-3c5f9356ab38; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
+        path=/; domain=.camplify1589433994.api-us1.com
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
+        path=/; domain=.camplify1589433994.api-us1.com
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Expires:
@@ -181,29 +181,29 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '73'
+      - '106'
       X-Request-Id:
-      - 2bf3b112-ad7e-46be-ade3-a3eaa30f1845
+      - 90ab60c1-1cc6-40ea-a1ae-fc22c44935d0
       Cf-Cache-Status:
       - DYNAMIC
+      Cf-Request-Id:
+      - 03ece687bb000016b5579db200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 59864136fce8d125-TXL
-      Cf-Request-Id:
-      - 02e7c716560000d125ed262200000001
+      - 5b280d1f9adc16b5-SYD
     body:
       encoding: ASCII-8BIT
       string: '{"address":{"companyName":"mhenrixon Consulting","address1":"Seestr.
-        5","address2":"","city":"Zeuthen","state":"Brandenburg","district":"","zip":"15738","country":"DE","allgroup":"0","isDefault":0,"created_timestamp":"2020-05-24
-        05:15:18","updated_timestamp":"2020-05-24 05:15:18","created_by":null,"updated_by":null,"links":{"addressGroup":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/addresses\/3\/addressGroup","addressList":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/addresses\/3\/addressList","forms":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/addresses\/3\/forms"},"id":"3"}}'
+        5","address2":"","city":"Zeuthen","state":"Brandenburg","district":"","zip":"15738","country":"DE","allgroup":"0","isDefault":0,"created_timestamp":"2020-07-13
+        22:10:31","updated_timestamp":"2020-07-13 22:10:31","created_by":null,"updated_by":null,"links":{"addressGroup":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/addresses\/2\/addressGroup","addressList":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/addresses\/2\/addressList","forms":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/addresses\/2\/forms"},"id":"2"}}'
     http_version: null
-  recorded_at: Sun, 24 May 2020 10:15:19 GMT
+  recorded_at: Tue, 14 Jul 2020 03:10:33 GMT
 - request:
     method: delete
-    uri: "<API_ENDPOINT>/addresses/3"
+    uri: "<API_ENDPOINT>/addresses/2"
     body:
       encoding: US-ASCII
       string: ''
@@ -224,7 +224,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 24 May 2020 10:15:19 GMT
+      - Tue, 14 Jul 2020 03:10:34 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -232,15 +232,15 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=572e3c25a7f4708ad4dcbee113191f0c; path=/; HttpOnly
-      - __cfduid=de892db9aad8f3707f1010f54dfd9ffd01590315319; expires=Tue, 23-Jun-20
-        10:15:19 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=a161d0f0-99f8-4427-ba53-f0cb7eef9911; path=/; domain=.mhenrixonconsulting1570091019.api-us1.com;
+      - PHPSESSID=c6c665eaef68c7ce406ebd294a936583; path=/; HttpOnly
+      - __cfduid=da6e696d3d69a10eb1f352684c5a9e8d41594696233; expires=Thu, 13-Aug-20
+        03:10:33 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=c84926e3-5270-494d-b553-9347ebb56383; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
+        path=/; domain=.camplify1589433994.api-us1.com
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
+        path=/; domain=.camplify1589433994.api-us1.com
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Expires:
@@ -248,24 +248,24 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '91'
+      - '89'
       X-Request-Id:
-      - 9b02426b-9129-4640-b9c0-f09ff0bfda11
+      - 99d24347-7d3b-43c8-8986-dc632f5b8d9c
       Accept-Ranges:
       - bytes
       Cf-Cache-Status:
       - DYNAMIC
+      Cf-Request-Id:
+      - 03ece68bef0000d6a5f2af9200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 59864139caabd11d-TXL
-      Cf-Request-Id:
-      - 02e7c7181e0000d11da52b6200000001
+      - 5b280d264c65d6a5-SYD
     body:
       encoding: UTF-8
       string: "{}"
     http_version: null
-  recorded_at: Sun, 24 May 2020 10:15:19 GMT
+  recorded_at: Tue, 14 Jul 2020 03:10:34 GMT
 recorded_with: VCR 5.1.0

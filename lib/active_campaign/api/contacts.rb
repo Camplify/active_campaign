@@ -84,10 +84,7 @@ module ActiveCampaign
       #
       # @return [Hash]
       #
-      def show_contacts(limit: nil, offset: nil, filters: {}, orders: {}, **params)
-        params[:limit] = limit unless limit.nil?
-        params[:offset] = offset unless offset.nil?
-
+      def show_contacts(filters: {}, orders: {}, **params)
         params[:filters] = filters if filters.any?
         params[:orders]  = orders  if orders.any?
 

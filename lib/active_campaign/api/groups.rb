@@ -95,8 +95,10 @@ module ActiveCampaign
       #
       # @return [Array<Hash>]
       #
-      def show_groups(search = nil)
-        get('groups', search: search)
+      def show_groups(search = nil, **params)
+        params[:search] = search if search
+
+        get('groups', params)
       end
 
       #

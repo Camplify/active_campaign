@@ -23,23 +23,23 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sun, 24 May 2020 10:17:01 GMT
+      - Tue, 14 Jul 2020 03:14:31 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '720'
+      - '654'
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=e5713085dad5fae38af67b81d95e697f; path=/; HttpOnly
-      - __cfduid=db59456f54562563ad6506b8e70ca23a11590315420; expires=Tue, 23-Jun-20
-        10:17:00 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
-      - em_acp_globalauth_cookie=fde5a539-f492-47f4-a192-a970e89a1711; path=/; domain=.mhenrixonconsulting1570091019.api-us1.com;
+      - PHPSESSID=e66e0f9ee3a7a9856bde5b20279da147; path=/; HttpOnly
+      - __cfduid=de189ace9a78e50f1376c44a0d91e3ee81594696470; expires=Thu, 13-Aug-20
+        03:14:30 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=018b1da7-4abe-4ed8-aa78-3651e461562c; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.camplify1589433994.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.camplify1589433994.api-us1.com
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Expires:
@@ -47,30 +47,30 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '82'
+      - '88'
       X-Request-Id:
-      - 13151496-2781-4134-a83d-f5b7512fb584
+      - a2b3981f-e6e9-4051-98ed-37529d4825b9
       Cf-Cache-Status:
       - DYNAMIC
+      Cf-Request-Id:
+      - 03ecea292b000016adc3982200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 598643b46eec2d3f-TXL
-      Cf-Request-Id:
-      - 02e7c8a4c400002d3f42aa8200000001
+      - 5b2812eea99816ad-SYD
     body:
       encoding: UTF-8
-      string: '{"group":{"title":"Awesome","descript":"My really awesome group","p_admin":1,"links":{"userGroups":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/groups\/34\/userGroups","groupLimit":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/groups\/34\/groupLimit","dealGroupGroups":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/groups\/34\/dealGroupGroups","listGroups":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/groups\/34\/listGroups","addressGroups":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/groups\/34\/addressGroups","automationGroups":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/groups\/34\/automationGroups"},"id":"34"}}'
+      string: '{"group":{"title":"Awesome","descript":"My really awesome group","p_admin":1,"links":{"userGroups":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/groups\/31\/userGroups","groupLimit":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/groups\/31\/groupLimit","dealGroupGroups":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/groups\/31\/dealGroupGroups","listGroups":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/groups\/31\/listGroups","addressGroups":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/groups\/31\/addressGroups","automationGroups":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/groups\/31\/automationGroups"},"id":"31"}}'
     http_version: null
-  recorded_at: Sun, 24 May 2020 10:17:01 GMT
+  recorded_at: Tue, 14 Jul 2020 03:14:31 GMT
 - request:
     method: post
     uri: "<API_ENDPOINT>/users"
     body:
       encoding: UTF-8
-      string: '{"user":{"username":"hokus","email":"hokus@pokus.de","firstName":"Hokus","lastName":"Pokus","group":"34","password":"hokuspokus"}}'
+      string: '{"user":{"username":"hokus","email":"hokus@pokus.de","firstName":"Hokus","lastName":"Pokus","group":"31","password":"hokuspokus"}}'
     headers:
       User-Agent:
       - ActiveCampaign Ruby Client (v3.0.0)
@@ -88,23 +88,23 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sun, 24 May 2020 10:17:01 GMT
+      - Tue, 14 Jul 2020 03:14:31 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1038'
+      - '952'
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=6f2b4d0f38ffe89b9be71d79238db5f8; path=/; HttpOnly
-      - __cfduid=dd613fd3e2bd4423356dcbbd7f73ff5a71590315421; expires=Tue, 23-Jun-20
-        10:17:01 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=17dec636-5a7e-453d-9d64-f155f90bba66; path=/; domain=.mhenrixonconsulting1570091019.api-us1.com;
+      - PHPSESSID=17de4427e2a9833b3d684540b764ee98; path=/; HttpOnly
+      - __cfduid=d173da8cd4367dc29b75cea2ca248be2d1594696471; expires=Thu, 13-Aug-20
+        03:14:31 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=4d1a5d1c-cb50-41ce-83b5-306eccf29b96; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
+        path=/; domain=.camplify1589433994.api-us1.com
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
+        path=/; domain=.camplify1589433994.api-us1.com
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Expires:
@@ -112,24 +112,24 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '336'
+      - '421'
       X-Request-Id:
-      - 56d1ceba-f1c3-4d1e-8d7f-8ed9c066a494
+      - cf96372e-8cad-4866-b0e7-6945d966acfc
       Cf-Cache-Status:
       - DYNAMIC
+      Cf-Request-Id:
+      - 03ecea2a890000fe64703de200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 598643b6e9dfd125-TXL
-      Cf-Request-Id:
-      - 02e7c8a6540000d125f2322200000001
+      - 5b2812f0d854fe64-SYD
     body:
       encoding: UTF-8
-      string: '{"user":{"username":"hokus","email":"hokus@pokus.de","firstName":"Hokus","lastName":"Pokus","localZoneid":"Europe\/Berlin","cdate":"2020-05-24T05:17:01-05:00","udate":"2020-05-24T05:17:01-05:00","links":{"lists":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/lists","userGroup":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/userGroup","dealGroupTotals":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/dealGroupTotals","dealGroupUsers":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/dealGroupUsers","configs":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/configs","dealConnection":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/dealConnection","userConversationsPermission":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/userConversationsPermission","seatUser":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/seatUser"},"id":"28"}}'
+      string: '{"user":{"username":"hokus","email":"hokus@pokus.de","firstName":"Hokus","lastName":"Pokus","localZoneid":"America\/Chicago","cdate":"2020-07-13T22:14:31-05:00","udate":"2020-07-13T22:14:31-05:00","links":{"lists":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/lists","userGroup":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/userGroup","dealGroupTotals":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/dealGroupTotals","dealGroupUsers":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/dealGroupUsers","configs":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/configs","dealConnection":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/dealConnection","userConversationsPermission":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/userConversationsPermission","seatUser":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/seatUser"},"id":"25"}}'
     http_version: null
-  recorded_at: Sun, 24 May 2020 10:17:01 GMT
+  recorded_at: Tue, 14 Jul 2020 03:14:31 GMT
 - request:
     method: get
     uri: "<API_ENDPOINT>/users/username/hokus"
@@ -153,7 +153,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 24 May 2020 10:17:02 GMT
+      - Tue, 14 Jul 2020 03:14:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -161,15 +161,15 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=1dfb24639b3bcafba0ad53820772860c; path=/; HttpOnly
-      - __cfduid=d0a7d600d1dd018421dfb059fe9079e431590315421; expires=Tue, 23-Jun-20
-        10:17:01 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=a521ee02-6d0d-4b65-bde3-110d19e71d54; path=/; domain=.mhenrixonconsulting1570091019.api-us1.com;
+      - PHPSESSID=b9bd97cd2c4b526d68437f6277930033; path=/; HttpOnly
+      - __cfduid=de9b0a8f060638eedebde1dfd229039471594696471; expires=Thu, 13-Aug-20
+        03:14:31 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=d207e2d4-ea04-4487-96ab-e3149e1c331f; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
+        path=/; domain=.camplify1589433994.api-us1.com
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
+        path=/; domain=.camplify1589433994.api-us1.com
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Expires:
@@ -177,27 +177,27 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '68'
+      - '231'
       X-Request-Id:
-      - 94f0e87e-b86d-4116-a12a-2f45e0a93c40
+      - 5eb7243d-d1bc-4905-815d-1fe290ca2d8f
       Cf-Cache-Status:
       - DYNAMIC
+      Cf-Request-Id:
+      - 03ecea2d39000016a9acaa2200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 598643bacee32d33-TXL
-      Cf-Request-Id:
-      - 02e7c8a8be00002d33b5106200000001
+      - 5b2812f52cc516a9-SYD
     body:
       encoding: ASCII-8BIT
-      string: '{"user":{"username":"hokus","firstName":"Hokus","lastName":"Pokus","email":"hokus@pokus.de","phone":"","signature":null,"localZoneid":"Europe\/Berlin","password_updated_utc_timestamp":null,"cdate":"2020-05-24T05:17:01-05:00","udate":"2020-05-24T05:17:01-05:00","mfaEnabled":"0","links":{"lists":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/lists","userGroup":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/userGroup","dealGroupTotals":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/dealGroupTotals","dealGroupUsers":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/dealGroupUsers","configs":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/configs","dealConnection":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/dealConnection","userConversationsPermission":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/userConversationsPermission","seatUser":"https:\/\/mhenrixonconsulting1570091019.api-us1.com\/api\/3\/users\/28\/seatUser"},"id":"28"}}'
+      string: '{"user":{"username":"hokus","firstName":"Hokus","lastName":"Pokus","email":"hokus@pokus.de","phone":"","signature":null,"localZoneid":"America\/Chicago","password_updated_utc_timestamp":null,"cdate":"2020-07-13T22:14:31-05:00","udate":"2020-07-13T22:14:31-05:00","mfaEnabled":"0","links":{"lists":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/lists","userGroup":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/userGroup","dealGroupTotals":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/dealGroupTotals","dealGroupUsers":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/dealGroupUsers","configs":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/configs","dealConnection":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/dealConnection","userConversationsPermission":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/userConversationsPermission","seatUser":"https:\/\/camplify1589433994.api-us1.com\/api\/3\/users\/25\/seatUser"},"id":"25"}}'
     http_version: null
-  recorded_at: Sun, 24 May 2020 10:17:02 GMT
+  recorded_at: Tue, 14 Jul 2020 03:14:32 GMT
 - request:
     method: delete
-    uri: "<API_ENDPOINT>/users/28"
+    uri: "<API_ENDPOINT>/users/25"
     body:
       encoding: US-ASCII
       string: ''
@@ -218,7 +218,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 24 May 2020 10:17:03 GMT
+      - Tue, 14 Jul 2020 03:14:33 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -226,15 +226,15 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=920f30494671bcf23a41ddfbc0259ce6; path=/; HttpOnly
-      - __cfduid=d794e75cf0424c76b7a721333b13772721590315422; expires=Tue, 23-Jun-20
-        10:17:02 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=44e6068e-684d-425e-81ab-dff3fc96a834; path=/; domain=.mhenrixonconsulting1570091019.api-us1.com;
+      - PHPSESSID=87e5fe38a17ac7acaf555294ef5265d6; path=/; HttpOnly
+      - __cfduid=d27b9dd980cf278f818d515f4745aa0dc1594696472; expires=Thu, 13-Aug-20
+        03:14:32 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.camplify1589433994.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.camplify1589433994.api-us1.com
+      - em_acp_globalauth_cookie=f6b0b4fe-87f6-4411-aec0-6c8ecc520ddb; path=/; domain=.camplify1589433994.api-us1.com;
         secure; httponly
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Expires:
@@ -242,89 +242,89 @@ http_interactions:
       Pragma:
       - no-cache
       X-Envoy-Upstream-Service-Time:
-      - '413'
+      - '497'
       X-Request-Id:
-      - 82d28d91-33f0-4331-907c-572c986285aa
-      Cf-Cache-Status:
-      - DYNAMIC
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 598643bfed8e2d4b-TXL
-      Cf-Request-Id:
-      - 02e7c8abf200002d4bd4aa0200000001
-    body:
-      encoding: UTF-8
-      string: "{}"
-    http_version: null
-  recorded_at: Sun, 24 May 2020 10:17:03 GMT
-- request:
-    method: delete
-    uri: "<API_ENDPOINT>/groups/34"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - ActiveCampaign Ruby Client (v3.0.0)
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-      Api-Token:
-      - "<API_KEY>"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Sun, 24 May 2020 10:17:03 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '2'
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - PHPSESSID=cd00aa75d034b2929d02345ed2a805b6; path=/; HttpOnly
-      - __cfduid=dcbc449c21c50bd8785d1fccf595916f31590315423; expires=Tue, 23-Jun-20
-        10:17:03 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=cae8a46a-17a6-429c-890d-8b0e236b655b; path=/; domain=.mhenrixonconsulting1570091019.api-us1.com;
-        secure; httponly
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.mhenrixonconsulting1570091019.api-us1.com
-      Cache-Control:
-      - no-store, no-cache, must-revalidate
-      Expires:
-      - Thu, 19 Nov 1981 08:52:00 GMT
-      Pragma:
-      - no-cache
-      X-Envoy-Upstream-Service-Time:
-      - '81'
-      X-Request-Id:
-      - '08e82f0d-1f9e-4888-a27b-db6893585751'
+      - c196c798-2bd9-46c4-bf2b-4c53d159d633
       Accept-Ranges:
       - bytes
       Cf-Cache-Status:
       - DYNAMIC
+      Cf-Request-Id:
+      - 03ecea2f36000016a9b72e9200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 598643c5fba92d69-TXL
-      Cf-Request-Id:
-      - 02e7c8afb700002d693ea60200000001
+      - 5b2812f85a1e16a9-SYD
     body:
       encoding: UTF-8
       string: "{}"
     http_version: null
-  recorded_at: Sun, 24 May 2020 10:17:03 GMT
+  recorded_at: Tue, 14 Jul 2020 03:14:33 GMT
+- request:
+    method: delete
+    uri: "<API_ENDPOINT>/groups/31"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - ActiveCampaign Ruby Client (v3.0.0)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Token:
+      - "<API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 14 Jul 2020 03:14:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - PHPSESSID=adafdb818e5f8f2064c1f1c14a76e785; path=/; HttpOnly
+      - __cfduid=ddb9694ff54d2d148cd5b0e416df3dd161594696473; expires=Thu, 13-Aug-20
+        03:14:33 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=2fdbaf16-4acd-4d70-927f-a09ac9259c70; path=/; domain=.camplify1589433994.api-us1.com;
+        secure; httponly
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.camplify1589433994.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.camplify1589433994.api-us1.com
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      X-Envoy-Upstream-Service-Time:
+      - '88'
+      X-Request-Id:
+      - 869d329f-46e9-4be0-a90e-4e622b38cfa9
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 03ecea32300000fd326baed200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5b2812fd1b5cfd32-SYD
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: null
+  recorded_at: Tue, 14 Jul 2020 03:14:33 GMT
 recorded_with: VCR 5.1.0

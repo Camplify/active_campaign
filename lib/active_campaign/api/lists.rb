@@ -54,8 +54,10 @@ module ActiveCampaign
       #
       # @return [Array<Hash>]
       #
-      def show_lists(search = nil)
-        get('lists', search: search)
+      def show_lists(search = nil, **params)
+        params[:search] = search if search
+
+        get('lists', params)
       end
 
       #

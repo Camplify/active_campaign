@@ -47,8 +47,8 @@ module ActiveCampaign
       #
       # @return [Array<Hash>]
       #
-      def show_addresses(*params)
-        get('addresses', *params)
+      def show_addresses(**params)
+        get('addresses', params)
       end
 
       #

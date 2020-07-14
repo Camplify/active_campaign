@@ -48,8 +48,10 @@ module ActiveCampaign
       #
       # @return [Array<Hash>]
       #
-      def show_pipelines(search = nil)
-        get('dealGroups', search: search)
+      def show_pipelines(search = nil, **params)
+        params[:search] = search if search
+
+        get('dealGroups', params)
       end
       alias show_deal_groups show_pipelines
 

@@ -40,8 +40,8 @@ module ActiveCampaign
       #
       # @return [Hash] a hash with the information of all contact tags of the contact
       #
-      def show_contact_contact_tags(id)
-        get("contacts/#{id}/contactTags")
+      def show_contact_contact_tags(id, **params)
+        get("contacts/#{id}/contactTags", params)
       end
 
       # NOTE: Undocumented functionality
@@ -60,8 +60,8 @@ module ActiveCampaign
       #
       # @return [Hash] a hash with the information of all contact tags
       #
-      def show_contact_tags
-        get('contactTags')
+      def show_contact_tags(**params)
+        get('contactTags', params)
       end
     end
   end

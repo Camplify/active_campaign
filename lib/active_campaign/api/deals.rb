@@ -78,8 +78,10 @@ module ActiveCampaign
       #
       # @return [Array<Hash>]
       #
-      def show_deals(search = nil)
-        get('deals', search: search)
+      def show_deals(search = nil, **params)
+        params[:search] = search if search
+
+        get('deals', params)
       end
 
       # rubocop:disable Layout/LineLength
