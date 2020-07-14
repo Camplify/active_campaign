@@ -38,8 +38,8 @@ module ActiveCampaign
       #
       # @return [Hash] a hash the information for all tags
       #
-      def show_tags
-        get('tags')
+      def show_tags(**params)
+        get('tags', params)
       end
 
       #

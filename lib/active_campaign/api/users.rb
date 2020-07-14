@@ -75,8 +75,8 @@ module ActiveCampaign
       #
       # @return [Array<Hash>]
       #
-      def show_users
-        get('users')
+      def show_users(**params)
+        get('users', params)
       end
 
       #
