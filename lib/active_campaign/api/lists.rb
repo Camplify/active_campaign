@@ -59,7 +59,7 @@ module ActiveCampaign
       # @return [Array<Hash>]
       #
       def show_lists(search = nil, **params)
-        params[:search] = search if search
+        params[:search] = search
 
         get('lists', params)
       end

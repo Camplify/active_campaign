@@ -45,7 +45,7 @@ module ActiveCampaign
       # @return [Array<Hash>]
       #
       def show_account_contacts(search = nil, **params)
-        params[:search] = search if search
+        params[:search] = search
 
         get('accountContacts', params)
       end

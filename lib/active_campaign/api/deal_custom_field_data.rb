@@ -88,7 +88,7 @@ module ActiveCampaign
       # @return [Array<Hash>]
       #
       def show_deal_custom_field_datas(search = nil, **params)
-        params[:search] = search if search
+        params[:search] = search
 
         get('dealCustomFieldData', params)
       end

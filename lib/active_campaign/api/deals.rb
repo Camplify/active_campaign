@@ -83,7 +83,7 @@ module ActiveCampaign
       # @return [Array<Hash>]
       #
       def show_deals(search = nil, **params)
-        params[:search] = search if search
+        params[:search] = search
 
         get('deals', params)
       end
