@@ -37,9 +37,10 @@ module ActiveCampaign
       #
       # @param [String] search Filter accounts that match the given value in the account attributes
       # @option [Hash] params Return results based on this data
-      # @option params [Integer] :limit The number of accounts to return in the response (default = 20; max = 100).
-      # @option params [Integer] :offset The starting point for the results in the response. This is zero-indexed.
-      #   E.g., if there are 39 total records and limit is set to 20, set offset to 20 to get the 2nd page of results.
+      # @option params [Integer] :limit The number of results to display in each page (default = 20; max = 100).
+      # @option params [Integer] :offset The starting point for the result set of a page. This is a zero-based index.
+      #   For example, if there are 39 total records and the limit is the default of 20, use offset=20 to get the second
+      #   page of results.
       #
       # @return [Array<Hash>]
       #
